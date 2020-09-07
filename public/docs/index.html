@@ -1,0 +1,539 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>API Reference</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/all.js"></script>
+
+
+          <script>
+        $(function() {
+            setupLanguages(["bash","javascript"]);
+        });
+      </script>
+      </head>
+
+  <body class="">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" />
+      </span>
+    </a>
+    <div class="tocify-wrapper">
+        <img src="images/logo.png" />
+                    <div class="lang-selector">
+                                  <a href="#" data-language-name="bash">bash</a>
+                                  <a href="#" data-language-name="javascript">javascript</a>
+                            </div>
+                            <div class="search">
+              <input type="text" class="search" id="input-search" placeholder="Search">
+            </div>
+            <ul class="search-results"></ul>
+              <div id="toc">
+      </div>
+                    <ul class="toc-footer">
+                                  <li><a href='http://github.com/mpociot/documentarian'>Documentation Powered by Documentarian</a></li>
+                            </ul>
+            </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+          <!-- START_INFO -->
+<h1>Info</h1>
+<p>Welcome to the generated API reference.
+<a href="http://localhost/docs/collection.json">Get Postman Collection</a></p>
+<!-- END_INFO -->
+<h1>general</h1>
+<!-- START_22ad378a9efd89c3e5158988ded1341a -->
+<h2>Admin/Jogador</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/Admin/Jogador" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Jogador"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET Admin/Jogador</code></p>
+<!-- END_22ad378a9efd89c3e5158988ded1341a -->
+<!-- START_76e594dbc32eacf4dc12cf2e37f713d5 -->
+<h2>Admin/Jogador/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/Admin/Jogador/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Jogador/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">null</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET Admin/Jogador/new</code></p>
+<!-- END_76e594dbc32eacf4dc12cf2e37f713d5 -->
+<!-- START_2244c3c3727681455b46c3962d9aec3f -->
+<h2>Admin/Jogador/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/Admin/Jogador/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Jogador/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST Admin/Jogador/new</code></p>
+<!-- END_2244c3c3727681455b46c3962d9aec3f -->
+<!-- START_a96431db4874c3e8018b4a39e6d3d1fc -->
+<h2>Admin/Time/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/Admin/Time/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Time/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "time": [
+        {
+            "id": 1,
+            "Nomedotime": "bragantino",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 2,
+            "Nomedotime": " Clube Esportivo Nova Esperança",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET Admin/Time/new</code></p>
+<!-- END_a96431db4874c3e8018b4a39e6d3d1fc -->
+<!-- START_f2239b6ef01e9e1670ae57b282482bce -->
+<h2>Admin/Time/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/Admin/Time/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Time/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST Admin/Time/new</code></p>
+<!-- END_f2239b6ef01e9e1670ae57b282482bce -->
+<!-- START_43b788067b96a2c4432e452233293cb2 -->
+<h2>Admin/Partida/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/Admin/Partida/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Partida/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "time": [
+        {
+            "id": 1,
+            "Nomedotime": "bragantino",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 2,
+            "Nomedotime": " Clube Esportivo Nova Esperança",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET Admin/Partida/new</code></p>
+<!-- END_43b788067b96a2c4432e452233293cb2 -->
+<!-- START_32f5950385084c6882a7604a4ebef18a -->
+<h2>Admin/Partida/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/Admin/Partida/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Partida/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST Admin/Partida/new</code></p>
+<!-- END_32f5950385084c6882a7604a4ebef18a -->
+<!-- START_f4d816e0497741d485f48a1bce139af0 -->
+<h2>Admin/Placar/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/Admin/Placar/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Placar/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "inforcaodapartida": [
+        {
+            "id": 1,
+            "Horarioinicio": "2020-09-05 10:00:00",
+            "Horariotermino": "2020-09-05 11:50:00",
+            "timesid1": 1,
+            "timesid2": 2,
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        }
+    ],
+    "Times": {
+        "time1": [
+            {
+                "id": 1,
+                "Nomedotime": "bragantino",
+                "created_at": "2020-09-05T04:00:00.000000Z",
+                "updated_at": "2020-09-05T04:00:00.000000Z"
+            }
+        ],
+        "time2": {
+            "1": {
+                "id": 2,
+                "Nomedotime": " Clube Esportivo Nova Esperança",
+                "created_at": "2020-09-05T04:00:00.000000Z",
+                "updated_at": "2020-09-05T04:00:00.000000Z"
+            }
+        }
+    }
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET Admin/Placar/new</code></p>
+<!-- END_f4d816e0497741d485f48a1bce139af0 -->
+<!-- START_9823d938c98cc97760bca3e5263e9111 -->
+<h2>Admin/Placar/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/Admin/Placar/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Placar/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST Admin/Placar/new</code></p>
+<!-- END_9823d938c98cc97760bca3e5263e9111 -->
+<!-- START_1e69bb2139a6eb9073356ce59c66dc06 -->
+<h2>Admin/Elenco</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X GET \
+    -G "http://localhost/Admin/Elenco" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Elenco"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<blockquote>
+<p>Example response (200):</p>
+</blockquote>
+<pre><code class="language-json">{
+    "time": [
+        {
+            "id": 1,
+            "Nomedotime": "bragantino",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 2,
+            "Nomedotime": " Clube Esportivo Nova Esperança",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        }
+    ],
+    "jogador": [
+        {
+            "id": 1,
+            "Nome": "augusto",
+            "CPF": "05261811171",
+            "Numerodacamiseta": "14",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 2,
+            "Nome": "arthur",
+            "CPF": "0521811171",
+            "Numerodacamiseta": "10",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 3,
+            "Nome": "marcos",
+            "CPF": "05261811171",
+            "Numerodacamiseta": "27",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 4,
+            "Nome": "carlos",
+            "CPF": "0521811171",
+            "Numerodacamiseta": "19",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        },
+        {
+            "id": 5,
+            "Nome": "Ramo",
+            "CPF": "05261811171",
+            "Numerodacamiseta": "34",
+            "created_at": "2020-09-05T08:00:00.000000Z",
+            "updated_at": "2020-09-05T08:00:00.000000Z"
+        },
+        {
+            "id": 6,
+            "Nome": "maia",
+            "CPF": "0521811171",
+            "Numerodacamiseta": "90",
+            "created_at": "2020-09-05T08:00:00.000000Z",
+            "updated_at": "2020-09-05T08:00:00.000000Z"
+        },
+        {
+            "id": 7,
+            "Nome": "ze",
+            "CPF": "05261811171",
+            "Numerodacamiseta": "7",
+            "created_at": "2020-09-05T08:00:00.000000Z",
+            "updated_at": "2020-09-05T08:00:00.000000Z"
+        },
+        {
+            "id": 8,
+            "Nome": "MAD",
+            "CPF": "05261811171",
+            "Numerodacamiseta": "12",
+            "created_at": "2020-09-05T08:00:00.000000Z",
+            "updated_at": "2020-09-05T08:00:00.000000Z"
+        },
+        {
+            "id": 9,
+            "Nome": "C3po",
+            "CPF": "0521811171",
+            "Numerodacamiseta": "31",
+            "created_at": "2020-09-05T08:00:00.000000Z",
+            "updated_at": "2020-09-05T08:00:00.000000Z"
+        },
+        {
+            "id": 10,
+            "Nome": "julio",
+            "CPF": "05261811171",
+            "Numerodacamiseta": "10",
+            "created_at": "2020-09-05T04:00:00.000000Z",
+            "updated_at": "2020-09-05T04:00:00.000000Z"
+        }
+    ]
+}</code></pre>
+<h3>HTTP Request</h3>
+<p><code>GET Admin/Elenco</code></p>
+<!-- END_1e69bb2139a6eb9073356ce59c66dc06 -->
+<!-- START_931f9567d3076d78bbb92e02a02f18db -->
+<h2>Admin/Elenco/new</h2>
+<blockquote>
+<p>Example request:</p>
+</blockquote>
+<pre><code class="language-bash">curl -X POST \
+    "http://localhost/Admin/Elenco/new" \
+    -H "Content-Type: application/json" \
+    -H "Accept: application/json"</code></pre>
+<pre><code class="language-javascript">const url = new URL(
+    "http://localhost/Admin/Elenco/new"
+);
+
+let headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "POST",
+    headers: headers,
+})
+    .then(response =&gt; response.json())
+    .then(json =&gt; console.log(json));</code></pre>
+<h3>HTTP Request</h3>
+<p><code>POST Admin/Elenco/new</code></p>
+<!-- END_931f9567d3076d78bbb92e02a02f18db -->
+      </div>
+      <div class="dark-box">
+                        <div class="lang-selector">
+                                    <a href="#" data-language-name="bash">bash</a>
+                                    <a href="#" data-language-name="javascript">javascript</a>
+                              </div>
+                </div>
+    </div>
+  </body>
+</html>
